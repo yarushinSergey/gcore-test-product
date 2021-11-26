@@ -1,16 +1,9 @@
 <nav class="productSidenav unselectable">
   <ul class="productMenu">
-    <li class="productMenuItem"><a class="productMenuItemLink">Statistics</a></li>
-    <li class="productMenuItem"><a class="productMenuItemLink">Resources</a></li>
+    <li class="productMenuItem"><a class="productMenuItemLink" routerLink="/statistics" routerLinkActive="active">Statistics</a></li>
+    <li class="productMenuItem"><a class="productMenuItemLink" routerLink="/resources" routerLinkActive="active">Resources</a></li>
   </ul>
 </nav>
 <div class="mainContainer">
-  <div class="topBar">
-    {{productName}}
-  </div>
-  <div class="mainArea">
-    <div class="content">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </div>
