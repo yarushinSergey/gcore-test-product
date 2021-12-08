@@ -4,6 +4,11 @@
 </div>
 <div class="mainArea">
   <div class="content">
-    <p>statistics works!</p>
+    <p class="apiTitle">Free API:</p>
+    <ol>
+      <li class="apiItem" *ngFor="let freeAPI of freeAPIs; index as i;">
+        Name:{{freeAPI?.API}} <br/> Description: {{freeAPI?.Description}} <br/> URL: <a href="{{freeAPI?.Link}}">{{freeAPI?.Link}}</a>
+      </li>
+    </ol>
   </div>
 </div>
