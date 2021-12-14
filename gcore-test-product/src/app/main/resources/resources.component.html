@@ -4,7 +4,18 @@
 </div>
 <div class="mainArea">
   <div class="content">
-    <p class="authorTitle">{{quote?.author}}</p>
-    <p class="quote">{{quote?.body}}</p>
+    <p class="categoryTitle">Category: {{fact?.cat}}</p>
+    <p>{{fact?.fact}}</p>
+    <p class="categoryTitle">Send message to shell:</p>
+    <div class="messageBlock">
+      <input class="messageText" type="text" #messageText/>
+      <button  class="sendButton" (click)="sendText()">Send</button>
+    </div>
+    <p class="messageFromShellTitle">
+      Message from shell:
+    </p>
+    <p>
+      {{infoFromShell}}
+    </p>
   </div>
 </div>

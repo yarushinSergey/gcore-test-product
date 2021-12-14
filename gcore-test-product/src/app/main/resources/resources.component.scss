@@ -31,10 +31,28 @@
     padding: 20px;
   }
 
-    .mainArea .content .authorTitle{
+    .mainArea .content .categoryTitle{
       font-size: 38px;
     }
 
-    .mainArea .content .quote{
-
+    .mainArea .content .messageBlock .messageText {
+      padding: 0;
+      display: inline-block;
+      line-height: 19px;
+      vertical-align: top;
+      margin-right: 5px;
     }
+
+    .mainArea .content .messageBlock .sendButton{
+      width: 100px;
+      height: 23px;
+      display: inline-block;
+      line-height: 20px;
+      vertical-align: top;
+      cursor: pointer;
+    }
+
+    .mainArea .content .messageFromShellTitle{
+      font-size: 38px;
+    }
+
